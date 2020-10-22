@@ -1,3 +1,34 @@
 {
-  "pokemon-team": []
+  "pokemon-team": [
+    {
+      "name": "machamp",
+      "isShiny": false,
+      "id": 10
+    },
+    {
+      "name": "rapidash",
+      "isShiny": false,
+      "id": 11
+    },
+    {
+      "name": "raikou",
+      "isShiny": false,
+      "id": 15
+    },
+    {
+      "name": "butterfree",
+      "isShiny": false,
+      "id": 16
+    },
+    {
+      "name": "swalot",
+      "isShiny": false,
+      "id": 17
+    },
+    {
+      "name": "venusaur",
+      "isShiny": false,
+      "id": 18
+    }
+  ]
 }

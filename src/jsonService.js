@@ -10,6 +10,10 @@ const addPokemon = (name) => {
   return axios.post(`${baseURL}/pokemon-team`, { name, isShiny: false }).then(res => res.data).catch(err => console.log(err))
 }
 
+const updateShiny = ({ id, isShiny }) => {
+  return axios.patch(`${baseURL}/pokemon-team/${id}`, { isShiny }).then(res => res.data).catch(err => console.log(err))
+}
+
 const removePokemon = (id) => {
   return axios.delete(`${baseURL}/pokemon-team/${id}`)
 }
@@ -17,5 +21,6 @@ const removePokemon = (id) => {
 export default {
   addPokemon,
   getPokemonTeam,
-  removePokemon
+  removePokemon,
+  updateShiny
 }

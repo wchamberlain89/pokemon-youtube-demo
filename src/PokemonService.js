@@ -2,8 +2,10 @@ import axios from 'axios'
 
 const baseURL = 'https://pokeapi.co/api/v2'
 
-const getAllPokemon = () => {
-  return axios.get(`${baseURL}/pokemon/?limit=250`).then(res => res.data)
+const getAllPokemon = (key, offset = 0) => {
+  console.log('offset is',(offset))
+
+  return axios.get(`${baseURL}/pokemon/?offset=${offset}&limit=50`).then(res => res.data)
 }
 
 const getPokemon = (id) => {
